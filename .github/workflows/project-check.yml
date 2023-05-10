@@ -1,5 +1,5 @@
 # Name of workflow
-name: Project Checker
+name: node CI
 
 # Trigger the workflow on push
 on:

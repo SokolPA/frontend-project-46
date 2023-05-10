@@ -23,17 +23,17 @@ const gendiff = (path1, path2) => {
   let result = '';
 
   for (const key of uniqKeys) {
-    if (!Object.hasOwn(data1, key)) { result += `+ ${key}: ${data2[key]}\n`; }
-    if (!Object.hasOwn(data2, key)) { result += `- ${key}: ${data1[key]}\n`; }
+    if (!Object.hasOwn(data1, key)) { result += `  + ${key}: ${data2[key]}\n`; }
+    if (!Object.hasOwn(data2, key)) { result += `  - ${key}: ${data1[key]}\n`; }
     if (Object.hasOwn(data1, key) && Object.hasOwn(data2, key)) {
       if (data1[key] === data2[key]) {
-        result += `  ${key}: ${data2[key]}\n`;
+        result += `    ${key}: ${data2[key]}\n`;
       } else {
-        result += `- ${key}: ${data1[key]}\n+ ${key}: ${data2[key]}\n`;
+        result += `  - ${key}: ${data1[key]}\n  + ${key}: ${data2[key]}\n`;
       }
     }
   }
-  return result;
+  return `{\n${result}}`;
 };
 
 export default gendiff;

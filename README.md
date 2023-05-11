@@ -14,3 +14,6 @@ $ gendiff <filepath1> <filepath2>
 ```
 
 <a href="https://asciinema.org/a/izz6DG04QLTMPcaBr9SlqMDau" target="_blank"><img src="https://asciinema.org/a/izz6DG04QLTMPcaBr9SlqMDau.svg" /></a>
+
+
+[def]: https://github.com/SokolPA/frontend-project-46/actions/workflows/project-check.yml/badge.svg

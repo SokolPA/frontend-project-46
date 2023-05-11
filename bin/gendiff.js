@@ -20,3 +20,4 @@ program
 program.parse();
 
 // process.argv
+// -- --coverage --coverageProvider=v8
